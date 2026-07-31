@@ -1,0 +1,1084 @@
+/* ==========================
+   VERTEX STUDIO
+   Premium Website Style
+   Parte 1
+========================== */
+
+
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+
+    background: #050816;
+
+    color: #ffffff;
+
+    line-height: 1.6;
+
+}
+
+
+/* VARIABILI */
+
+:root {
+
+    --primary: #2563eb;
+
+    --secondary: #38bdf8;
+
+    --dark: #050816;
+
+    --dark-card: #0f172a;
+
+    --text-gray: #94a3b8;
+
+    --white: #ffffff;
+
+    --gradient:
+    linear-gradient(
+        135deg,
+        #2563eb,
+        #38bdf8
+    );
+
+}
+
+
+/* LINK */
+
+a {
+
+    text-decoration: none;
+
+    color: inherit;
+
+}
+
+
+/* IMMAGINI */
+
+img {
+
+    max-width: 100%;
+
+    display: block;
+
+}
+
+
+/* CONTAINER */
+
+.container {
+
+    width: 90%;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+}
+
+
+
+/* ==========================
+   NAVBAR
+========================== */
+
+
+header {
+
+    position: fixed;
+
+    top: 0;
+
+    width: 100%;
+
+    z-index: 1000;
+
+    padding: 20px 0;
+
+    background:
+
+    rgba(5,8,22,0.55);
+
+    backdrop-filter: blur(15px);
+
+    border-bottom:
+
+    1px solid rgba(255,255,255,0.08);
+
+}
+
+
+
+header .container {
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+}
+
+
+
+.logo {
+
+    font-size: 28px;
+
+    font-weight:800;
+
+    letter-spacing:-1px;
+
+}
+
+
+
+.logo span {
+
+    color: var(--secondary);
+
+}
+
+
+
+
+nav ul {
+
+    display:flex;
+
+    list-style:none;
+
+    gap:35px;
+
+}
+
+
+
+nav a {
+
+    color:#cbd5e1;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+
+
+nav a:hover,
+nav .active {
+
+    color:white;
+
+}
+
+
+
+.btn-nav {
+
+
+    background:var(--gradient);
+
+    padding:12px 25px;
+
+    border-radius:30px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+
+
+.btn-nav:hover {
+
+    transform:translateY(-3px);
+
+    box-shadow:
+
+    0 10px 30px rgba(37,99,235,.4);
+
+}
+
+
+
+
+/* ==========================
+   HERO
+========================== */
+
+
+.hero {
+
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+
+/* SFONDO LUMINOSO */
+
+
+.hero::before {
+
+
+    content:"";
+
+    position:absolute;
+
+    width:600px;
+
+    height:600px;
+
+    background:#2563eb;
+
+    filter:blur(180px);
+
+    opacity:.35;
+
+    top:10%;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+}
+
+
+
+
+.hero-content {
+
+
+    position:relative;
+
+    max-width:900px;
+
+    animation:fadeUp 1s ease;
+
+}
+
+
+
+
+.hero h1 {
+
+
+    font-size:
+
+    clamp(45px,6vw,75px);
+
+
+    line-height:1.05;
+
+
+    letter-spacing:-3px;
+
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+
+.hero p {
+
+
+    font-size:21px;
+
+
+    color:var(--text-gray);
+
+
+    max-width:700px;
+
+
+    margin:auto;
+
+
+    margin-bottom:40px;
+
+
+}
+
+
+
+
+.hero-buttons {
+
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+
+}
+
+
+
+.btn-primary {
+
+
+    background:var(--gradient);
+
+    padding:16px 35px;
+
+    border-radius:40px;
+
+    font-weight:700;
+
+    transition:.3s;
+
+
+}
+
+
+
+.btn-primary:hover {
+
+
+    transform:translateY(-5px);
+
+
+    box-shadow:
+
+    0 15px 40px rgba(56,189,248,.35);
+
+
+}
+
+
+
+.btn-secondary {
+
+
+    padding:16px 35px;
+
+
+    border-radius:40px;
+
+
+    border:1px solid rgba(255,255,255,.2);
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.btn-secondary:hover {
+
+
+    background:white;
+
+
+    color:#050816;
+
+
+}
+
+
+
+/* ==========================
+   ANIMAZIONI
+========================== */
+
+
+@keyframes fadeUp {
+
+
+    from {
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+
+    to {
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+
+}
+
+/* ==========================
+   SEZIONI GENERALI
+========================== */
+
+
+section {
+
+    padding:120px 0;
+
+}
+
+
+h2 {
+
+    font-size:45px;
+
+    letter-spacing:-1.5px;
+
+    text-align:center;
+
+    margin-bottom:20px;
+
+}
+
+
+
+section > .container > p {
+
+    color:var(--text-gray);
+
+}
+
+
+
+
+
+/* ==========================
+   CHI SIAMO
+========================== */
+
+
+.about-preview {
+
+
+    background:
+
+    linear-gradient(
+
+        180deg,
+
+        #050816,
+
+        #0b1225
+
+    );
+
+
+    text-align:center;
+
+
+}
+
+
+
+.about-preview p {
+
+
+    max-width:850px;
+
+
+    margin:15px auto;
+
+
+    font-size:18px;
+
+
+    color:#cbd5e1;
+
+
+}
+
+
+
+.about-preview .btn-primary {
+
+
+    display:inline-block;
+
+
+    margin-top:35px;
+
+
+}
+
+
+
+
+
+/* ==========================
+   SERVIZI
+========================== */
+
+
+.services-preview {
+
+
+    background:#050816;
+
+
+}
+
+
+
+.cards {
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    repeat(4,1fr);
+
+
+    gap:25px;
+
+
+    margin-top:60px;
+
+
+}
+
+
+
+.card {
+
+
+    background:
+
+
+    rgba(255,255,255,.05);
+
+
+    border:
+
+
+    1px solid rgba(255,255,255,.08);
+
+
+
+    padding:35px 25px;
+
+
+    border-radius:25px;
+
+
+    transition:.4s;
+
+
+    backdrop-filter:blur(10px);
+
+
+}
+
+
+
+.card:hover {
+
+
+    transform:
+
+    translateY(-12px);
+
+
+    border-color:
+
+    rgba(56,189,248,.5);
+
+
+    box-shadow:
+
+    0 20px 50px rgba(0,0,0,.3);
+
+
+}
+
+
+
+.card h3 {
+
+
+    font-size:23px;
+
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+.card p {
+
+
+    color:var(--text-gray);
+
+
+}
+
+
+
+
+
+/* ==========================
+   PORTFOLIO
+========================== */
+
+
+.portfolio-preview {
+
+
+    background:#0b1225;
+
+
+}
+
+
+
+.portfolio-grid {
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    repeat(3,1fr);
+
+
+    gap:30px;
+
+
+    margin-top:60px;
+
+
+}
+
+
+
+.portfolio-item {
+
+
+    overflow:hidden;
+
+
+    border-radius:25px;
+
+
+    background:#111827;
+
+
+    border:
+
+    1px solid rgba(255,255,255,.08);
+
+
+    transition:.4s;
+
+
+}
+
+
+
+.portfolio-item img {
+
+
+    height:260px;
+
+
+    width:100%;
+
+
+    object-fit:cover;
+
+
+    transition:.5s;
+
+
+}
+
+
+
+.portfolio-item h3 {
+
+
+    padding:25px;
+
+
+    font-size:22px;
+
+
+}
+
+
+
+.portfolio-item:hover {
+
+
+    transform:
+
+    translateY(-10px);
+
+
+}
+
+
+
+.portfolio-item:hover img {
+
+
+    transform:scale(1.08);
+
+
+}
+
+
+
+
+
+/* ==========================
+   CTA
+========================== */
+
+
+.cta {
+
+
+    text-align:center;
+
+
+    background:
+
+
+    radial-gradient(
+
+        circle at center,
+
+        rgba(37,99,235,.25),
+
+        transparent 50%
+
+    );
+
+
+}
+
+
+
+.cta h2 {
+
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+.cta p {
+
+
+    max-width:700px;
+
+
+    margin:
+
+    0 auto 40px;
+
+
+    color:var(--text-gray);
+
+
+    font-size:19px;
+
+
+}
+
+
+
+
+
+
+/* ==========================
+   FOOTER
+========================== */
+
+
+footer {
+
+
+    background:#020617;
+
+
+    padding:50px 0;
+
+
+    text-align:center;
+
+
+    border-top:
+
+    1px solid rgba(255,255,255,.08);
+
+
+}
+
+
+
+footer h3 {
+
+
+    font-size:28px;
+
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+footer p {
+
+
+    color:var(--text-gray);
+
+
+    margin-top:10px;
+
+
+}
+
+
+
+
+
+
+/* ==========================
+   RESPONSIVE TABLET
+========================== */
+
+
+@media(max-width:1000px){
+
+
+
+.cards {
+
+
+    grid-template-columns:
+
+    repeat(2,1fr);
+
+
+}
+
+
+
+.portfolio-grid {
+
+
+    grid-template-columns:
+
+    repeat(2,1fr);
+
+
+}
+
+
+
+nav ul {
+
+
+    gap:15px;
+
+
+}
+
+
+
+}
+
+
+
+
+/* ==========================
+   RESPONSIVE MOBILE
+========================== */
+
+
+@media(max-width:700px){
+
+
+header {
+
+
+    padding:15px 0;
+
+
+}
+
+
+
+nav {
+
+
+    display:none;
+
+
+}
+
+
+
+.btn-nav {
+
+
+    display:none;
+
+
+}
+
+
+
+.logo {
+
+
+    font-size:24px;
+
+
+}
+
+
+
+.hero {
+
+
+    padding:120px 20px 50px;
+
+
+}
+
+
+
+.hero h1 {
+
+
+    font-size:42px;
+
+
+    letter-spacing:-1px;
+
+
+}
+
+
+
+.hero p {
+
+
+    font-size:17px;
+
+
+}
+
+
+
+.hero-buttons {
+
+
+    flex-direction:column;
+
+
+}
+
+
+
+.btn-primary,
+.btn-secondary {
+
+
+    width:100%;
+
+
+}
+
+
+
+section {
+
+
+    padding:80px 0;
+
+
+}
+
+
+
+h2 {
+
+
+    font-size:34px;
+
+
+}
+
+
+
+.cards {
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+.portfolio-grid {
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+}
+
