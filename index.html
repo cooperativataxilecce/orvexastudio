@@ -1,142 +1,210 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Ristorante La Terrazza</title>
+<title>NovaWeb Studio | Siti Web Professionali</title>
 
 <style>
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: Arial, sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
 }
 
 body{
-    background:#faf7f2;
-    color:#333;
+background:#f7f7f7;
+color:#222;
 }
+
 
 header{
-    background:
-    linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
-    url("https://images.unsplash.com/photo-1515003197210-e0cd71810b5f")
-    center/cover;
 
-    height:90vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    color:white;
+height:90vh;
+
+background:
+linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url("https://images.unsplash.com/photo-1460925895917-afdab827c52f")
+center/cover;
+
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+
+color:white;
+
 }
+
 
 header h1{
-    font-size:55px;
+
+font-size:60px;
+
 }
+
 
 header p{
-    font-size:22px;
-    margin:20px;
+
+font-size:22px;
+margin:20px;
+
 }
 
+
+
 .btn{
-    background:#d88b32;
-    color:white;
-    padding:15px 30px;
-    border-radius:30px;
-    text-decoration:none;
-    display:inline-block;
-    margin:10px;
+
+background:#2563eb;
+color:white;
+padding:15px 35px;
+border-radius:30px;
+text-decoration:none;
+display:inline-block;
+
 }
+
 
 
 section{
-    padding:60px 10%;
+
+padding:70px 10%;
+
 }
+
 
 
 h2{
-    text-align:center;
-    margin-bottom:40px;
-    font-size:35px;
+
+text-align:center;
+font-size:38px;
+margin-bottom:40px;
+
 }
 
 
-.menu{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
+
+/* CHI SIAMO */
+
+
+.about{
+
+text-align:center;
+font-size:20px;
+line-height:1.6;
+
 }
+
+
+
+/* SERVIZI */
+
+
+.cards{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+
+}
+
 
 
 .card{
 
-    background:white;
-    padding:25px;
-    border-radius:15px;
-    box-shadow:0 5px 15px #ddd;
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 5px 20px #ddd;
 
 }
+
 
 
 .card h3{
-    color:#d88b32;
-    margin-bottom:10px;
-}
 
-
-.prezzo{
-    float:right;
-    font-weight:bold;
-}
-
-
-.contatti{
-    background:#222;
-    color:white;
-    text-align:center;
-}
-
-
-form{
-
-    max-width:500px;
-    margin:auto;
+color:#2563eb;
+margin-bottom:15px;
 
 }
 
 
-input, select, textarea{
 
-width:100%;
-padding:15px;
-margin:10px 0;
-border-radius:8px;
-border:1px solid #ccc;
+
+/* PORTFOLIO */
+
+
+.site{
+
+background:white;
+padding:25px;
+border-radius:15px;
+margin:20px 0;
 
 }
 
 
-button{
 
-background:#d88b32;
+.site span{
+
+color:#2563eb;
+font-weight:bold;
+
+}
+
+
+
+
+/* PREZZI */
+
+
+.price{
+
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 5px 20px #ddd;
+
+}
+
+
+
+.price h3{
+
+color:#2563eb;
+
+}
+
+
+
+.price li{
+
+margin:10px;
+
+}
+
+
+
+/* CONTATTI */
+
+
+.contact{
+
+background:#111;
 color:white;
-border:none;
-padding:15px;
-width:100%;
-border-radius:30px;
-font-size:18px;
+text-align:center;
 
 }
+
 
 
 footer{
 
-background:#111;
+background:#000;
 color:white;
 text-align:center;
 padding:20px;
@@ -146,23 +214,29 @@ padding:20px;
 
 </style>
 
+
 </head>
 
 
 <body>
 
 
+
 <header>
 
 <div>
 
-<h1>La Terrazza</h1>
+<h1>NovaWeb Studio</h1>
 
-<p>Cucina italiana • Tradizione • Qualità</p>
+<p>
+Creiamo siti web moderni per aziende e attività locali
+</p>
 
-<a class="btn" href="#prenota">
-Prenota un tavolo
+
+<a class="btn" href="#contatti">
+Contattaci
 </a>
+
 
 </div>
 
@@ -170,26 +244,57 @@ Prenota un tavolo
 
 
 
+
 <section>
 
-<h2>Il nostro Menu</h2>
+
+<h2>Chi siamo</h2>
 
 
-<div class="menu">
+<div class="about">
+
+<p>
+
+Siamo uno studio digitale specializzato nella realizzazione
+di siti web professionali per ristoranti, strutture ricettive
+e attività locali.
+
+</p>
+
+<p>
+
+Trasformiamo un'idea in una presenza online moderna,
+veloce e pensata per trovare nuovi clienti.
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<section>
+
+
+<h2>Cosa facciamo</h2>
+
+
+<div class="cards">
 
 
 <div class="card">
 
-<h3>Antipasti</h3>
+<h3>🌐 Siti Web</h3>
 
 <p>
-Tagliere salumi e formaggi
-<span class="prezzo">15€</span>
-</p>
-
-<p>
-Polpo alla griglia
-<span class="prezzo">18€</span>
+Realizziamo siti vetrina moderni,
+ottimizzati per smartphone e Google.
 </p>
 
 </div>
@@ -198,16 +303,11 @@ Polpo alla griglia
 
 <div class="card">
 
-<h3>Primi</h3>
+<h3>📱 Prenotazioni</h3>
 
 <p>
-Carbonara
-<span class="prezzo">12€</span>
-</p>
-
-<p>
-Risotto ai frutti di mare
-<span class="prezzo">16€</span>
+Inseriamo sistemi di contatto,
+WhatsApp e richieste online.
 </p>
 
 </div>
@@ -217,38 +317,12 @@ Risotto ai frutti di mare
 
 <div class="card">
 
-<h3>Secondi</h3>
+<h3>🚀 Presenza Online</h3>
 
 <p>
-Filetto di carne
-<span class="prezzo">22€</span>
+Aiutiamo le attività a migliorare
+la loro immagine digitale.
 </p>
-
-<p>
-Pesce fresco
-<span class="prezzo">25€</span>
-</p>
-
-
-</div>
-
-
-
-
-<div class="card">
-
-<h3>Dolci</h3>
-
-<p>
-Tiramisù
-<span class="prezzo">6€</span>
-</p>
-
-<p>
-Cheesecake
-<span class="prezzo">7€</span>
-</p>
-
 
 </div>
 
@@ -261,46 +335,71 @@ Cheesecake
 
 
 
-<section id="prenota">
 
 
-<h2>Prenota il tuo tavolo</h2>
+<section>
 
 
-<form>
+<h2>Esempi di siti</h2>
 
 
-<input placeholder="Nome e cognome">
+<div class="site">
+
+<h3>🍕 Ristorante La Terrazza</h3>
+
+<p>
+
+Sito vetrina con menu digitale,
+foto dei piatti e prenotazione WhatsApp.
+
+</p>
+
+<span>
+Demo disponibile
+</span>
 
 
-<input placeholder="Numero telefono">
-
-
-<input type="date">
-
-
-<select>
-
-<option>Numero persone</option>
-<option>1 persona</option>
-<option>2 persone</option>
-<option>4 persone</option>
-<option>6+ persone</option>
-
-</select>
-
-
-
-<textarea placeholder="Richieste speciali"></textarea>
+</div>
 
 
 
-<button onclick="prenota()">
-Invia prenotazione WhatsApp
-</button>
+<div class="site">
+
+<h3>🏨 B&B Mare Blu</h3>
+
+<p>
+
+Presentazione camere,
+galleria fotografica e richiesta disponibilità.
+
+</p>
+
+<span>
+Demo disponibile
+</span>
+
+</div>
 
 
-</form>
+
+
+<div class="site">
+
+<h3>🚕 Servizi Taxi Express</h3>
+
+<p>
+
+Sito professionale con contatti,
+preventivi e prenotazioni.
+
+</p>
+
+<span>
+Demo disponibile
+</span>
+
+</div>
+
 
 
 </section>
@@ -309,19 +408,111 @@ Invia prenotazione WhatsApp
 
 
 
-<section class="contatti">
-
-<h2>Contatti</h2>
-
-<p>📍 Via Roma 10</p>
-
-<p>📞 333 1234567</p>
-
-<p>🕒 Aperto tutti i giorni 19:00 - 23:30</p>
 
 
-<a class="btn" href="tel:+393331234567">
-Chiama ora
+
+<section>
+
+
+<h2>Prezzi indicativi</h2>
+
+
+<div class="cards">
+
+
+<div class="price">
+
+<h3>Starter</h3>
+
+<h2>399€</h2>
+
+<ul>
+
+<li>Sito fino a 4 pagine</li>
+<li>Design moderno</li>
+<li>Versione smartphone</li>
+<li>Contatti WhatsApp</li>
+
+</ul>
+
+
+</div>
+
+
+
+
+
+<div class="price">
+
+<h3>Business</h3>
+
+<h2>699€</h2>
+
+
+<ul>
+
+<li>Sito completo</li>
+<li>Menu / servizi</li>
+<li>Galleria foto</li>
+<li>Prenotazioni online</li>
+<li>Google Maps</li>
+
+</ul>
+
+
+</div>
+
+
+
+
+<div class="price">
+
+<h3>Premium</h3>
+
+<h2>999€+</h2>
+
+
+<ul>
+
+<li>Sito avanzato</li>
+<li>Funzioni personalizzate</li>
+<li>Assistenza continua</li>
+
+</ul>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<section id="contatti" class="contact">
+
+
+<h2>Contattaci</h2>
+
+
+<p>
+Hai bisogno di un sito per la tua attività?
+</p>
+
+
+<br>
+
+
+<a class="btn" href="https://wa.me/393331234567">
+
+Scrivici su WhatsApp
+
 </a>
 
 
@@ -332,32 +523,9 @@ Chiama ora
 
 <footer>
 
-© 2026 Ristorante La Terrazza
+© 2026 NovaWeb Studio
 
 </footer>
-
-
-
-
-<script>
-
-function prenota(){
-
-let telefono="393331234567";
-
-let messaggio=
-"Salve, vorrei prenotare un tavolo al ristorante.";
-
-let url=
-"https://wa.me/"+telefono+
-"?text="+encodeURIComponent(messaggio);
-
-
-window.open(url);
-
-}
-
-</script>
 
 
 
