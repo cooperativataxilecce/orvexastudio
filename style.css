@@ -1082,3 +1082,84 @@ h2 {
 
 }
 
+/* PAGINE INTERNE */
+
+
+.page-hero{
+
+min-height:70vh;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+text-align:center;
+
+padding-top:120px;
+
+background:
+
+radial-gradient(
+circle at center,
+rgba(37,99,235,.25),
+transparent 55%
+);
+
+}
+
+
+.page-hero h1{
+
+font-size:clamp(40px,5vw,65px);
+
+max-width:900px;
+
+margin:auto;
+
+}
+
+
+.page-hero p{
+
+font-size:20px;
+
+color:var(--text-gray);
+
+max-width:700px;
+
+margin:25px auto;
+
+}
+
+
+
+.about-box{
+
+max-width:850px;
+
+margin:auto;
+
+text-align:center;
+
+}
+
+
+.about-box p{
+
+font-size:19px;
+
+color:#cbd5e1;
+
+margin:20px 0;
+
+}
+
+
+
+.values{
+
+background:#0b1225;
+
+}
