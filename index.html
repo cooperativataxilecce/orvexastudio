@@ -1,533 +1,330 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>NovaWeb Studio | Siti Web Professionali</title>
+    <title>Vertex Studio | Siti Web Professionali</title>
 
-<style>
+    <meta name="description"
+        content="Vertex Studio realizza siti web professionali per aziende, ristoranti, hotel, B&B, negozi e attività locali.">
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, sans-serif;
-}
-
-body{
-background:#f7f7f7;
-color:#222;
-}
-
-
-header{
-
-height:90vh;
-
-background:
-linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
-url("https://images.unsplash.com/photo-1460925895917-afdab827c52f")
-center/cover;
-
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-
-color:white;
-
-}
-
-
-header h1{
-
-font-size:60px;
-
-}
-
-
-header p{
-
-font-size:22px;
-margin:20px;
-
-}
-
-
-
-.btn{
-
-background:#2563eb;
-color:white;
-padding:15px 35px;
-border-radius:30px;
-text-decoration:none;
-display:inline-block;
-
-}
-
-
-
-section{
-
-padding:70px 10%;
-
-}
-
-
-
-h2{
-
-text-align:center;
-font-size:38px;
-margin-bottom:40px;
-
-}
-
-
-
-/* CHI SIAMO */
-
-
-.about{
-
-text-align:center;
-font-size:20px;
-line-height:1.6;
-
-}
-
-
-
-/* SERVIZI */
-
-
-.cards{
-
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-
-}
-
-
-
-.card{
-
-background:white;
-padding:30px;
-border-radius:20px;
-box-shadow:0 5px 20px #ddd;
-
-}
-
-
-
-.card h3{
-
-color:#2563eb;
-margin-bottom:15px;
-
-}
-
-
-
-
-/* PORTFOLIO */
-
-
-.site{
-
-background:white;
-padding:25px;
-border-radius:15px;
-margin:20px 0;
-
-}
-
-
-
-.site span{
-
-color:#2563eb;
-font-weight:bold;
-
-}
-
-
-
-
-/* PREZZI */
-
-
-.price{
-
-background:white;
-padding:30px;
-border-radius:20px;
-box-shadow:0 5px 20px #ddd;
-
-}
-
-
-
-.price h3{
-
-color:#2563eb;
-
-}
-
-
-
-.price li{
-
-margin:10px;
-
-}
-
-
-
-/* CONTATTI */
-
-
-.contact{
-
-background:#111;
-color:white;
-text-align:center;
-
-}
-
-
-
-footer{
-
-background:#000;
-color:white;
-text-align:center;
-padding:20px;
-
-}
-
-
-</style>
-
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
-
 <body>
 
+    <!-- NAVBAR -->
 
+    <header>
 
-<header>
+        <div class="container">
 
-<div>
+            <a href="index.html" class="logo">
 
-<h1>NovaWeb Studio</h1>
+                Vertex<span>Studio</span>
 
-<p>
-Creiamo siti web moderni per aziende e attività locali
-</p>
+            </a>
 
+            <nav>
 
-<a class="btn" href="#contatti">
-Contattaci
-</a>
+                <ul>
 
+                    <li><a href="index.html" class="active">Home</a></li>
 
-</div>
+                    <li><a href="chi-siamo.html">Chi siamo</a></li>
 
-</header>
+                    <li><a href="servizi.html">Servizi</a></li>
 
+                    <li><a href="portfolio.html">Portfolio</a></li>
 
+                    <li><a href="pacchetti.html">Pacchetti</a></li>
 
+                    <li><a href="contatti.html">Contatti</a></li>
 
-<section>
+                </ul>
 
+            </nav>
 
-<h2>Chi siamo</h2>
+            <a href="contatti.html" class="btn-nav">
 
+                Richiedi Preventivo
 
-<div class="about">
+            </a>
 
-<p>
+        </div>
 
-Siamo uno studio digitale specializzato nella realizzazione
-di siti web professionali per ristoranti, strutture ricettive
-e attività locali.
+    </header>
 
-</p>
 
-<p>
 
-Trasformiamo un'idea in una presenza online moderna,
-veloce e pensata per trovare nuovi clienti.
+    <!-- HERO -->
 
-</p>
+    <section class="hero">
 
+        <div class="hero-content">
 
-</div>
+            <h1>
 
+                Creiamo siti web che fanno crescere il tuo business.
 
-</section>
+            </h1>
 
+            <p>
 
+                Design moderno, sviluppo professionale e soluzioni digitali
+                pensate per trasformare visitatori in clienti.
 
+            </p>
 
+            <div class="hero-buttons">
 
+                <a href="portfolio.html" class="btn-primary">
 
-<section>
+                    Guarda i nostri lavori
 
+                </a>
 
-<h2>Cosa facciamo</h2>
+                <a href="contatti.html" class="btn-secondary">
 
+                    Contattaci
 
-<div class="cards">
+                </a>
 
+            </div>
 
-<div class="card">
+        </div>
 
-<h3>🌐 Siti Web</h3>
+    </section>
 
-<p>
-Realizziamo siti vetrina moderni,
-ottimizzati per smartphone e Google.
-</p>
 
-</div>
 
+    <!-- CHI SIAMO -->
 
+    <section class="about-preview">
 
-<div class="card">
+        <div class="container">
 
-<h3>📱 Prenotazioni</h3>
+            <h2>
 
-<p>
-Inseriamo sistemi di contatto,
-WhatsApp e richieste online.
-</p>
+                Chi siamo
 
-</div>
+            </h2>
 
+            <p>
 
+                Vertex Studio è uno studio digitale specializzato nella
+                progettazione e nello sviluppo di siti web professionali.
 
+            </p>
 
-<div class="card">
+            <p>
 
-<h3>🚀 Presenza Online</h3>
+                Collaboriamo con ristoranti, hotel, B&B, negozi,
+                aziende e professionisti per costruire una presenza
+                online moderna, veloce e capace di trasmettere fiducia.
 
-<p>
-Aiutiamo le attività a migliorare
-la loro immagine digitale.
-</p>
+            </p>
 
-</div>
+            <a href="chi-siamo.html" class="btn-primary">
 
+                Scopri di più
 
-</div>
+            </a>
 
+        </div>
 
-</section>
+    </section>
 
 
 
+    <!-- SERVIZI -->
 
+    <section class="services-preview">
 
+        <div class="container">
 
-<section>
+            <h2>
 
+                Cosa facciamo
 
-<h2>Esempi di siti</h2>
+            </h2>
 
+            <div class="cards">
 
-<div class="site">
+                <div class="card">
 
-<h3>🍕 Ristorante La Terrazza</h3>
+                    <h3>Siti Vetrina</h3>
 
-<p>
+                    <p>
 
-Sito vetrina con menu digitale,
-foto dei piatti e prenotazione WhatsApp.
+                        Realizziamo siti eleganti,
+                        veloci e responsive.
 
-</p>
+                    </p>
 
-<span>
-Demo disponibile
-</span>
+                </div>
 
+                <div class="card">
 
-</div>
+                    <h3>Prenotazioni Online</h3>
 
+                    <p>
 
+                        WhatsApp, moduli di contatto
+                        e richieste preventivo.
 
-<div class="site">
+                    </p>
 
-<h3>🏨 B&B Mare Blu</h3>
+                </div>
 
-<p>
+                <div class="card">
 
-Presentazione camere,
-galleria fotografica e richiesta disponibilità.
+                    <h3>SEO</h3>
 
-</p>
+                    <p>
 
-<span>
-Demo disponibile
-</span>
+                        Ottimizziamo il sito per
+                        essere trovato su Google.
 
-</div>
+                    </p>
 
+                </div>
 
+                <div class="card">
 
+                    <h3>Assistenza</h3>
 
-<div class="site">
+                    <p>
 
-<h3>🚕 Servizi Taxi Express</h3>
+                        Rimaniamo al tuo fianco
+                        anche dopo la pubblicazione.
 
-<p>
+                    </p>
 
-Sito professionale con contatti,
-preventivi e prenotazioni.
+                </div>
 
-</p>
+            </div>
 
-<span>
-Demo disponibile
-</span>
+        </div>
 
-</div>
+    </section>
 
 
 
-</section>
+    <!-- PORTFOLIO -->
 
+    <section class="portfolio-preview">
 
+        <div class="container">
 
+            <h2>
 
+                Alcuni esempi
 
+            </h2>
 
+            <div class="portfolio-grid">
 
+                <div class="portfolio-item">
 
-<section>
+                    <img src="images/restaurant.jpg" alt="Ristorante">
 
+                    <h3>Ristorante</h3>
 
-<h2>Prezzi indicativi</h2>
+                </div>
 
+                <div class="portfolio-item">
 
-<div class="cards">
+                    <img src="images/hotel.jpg" alt="Hotel">
 
+                    <h3>Hotel & B&B</h3>
 
-<div class="price">
+                </div>
 
-<h3>Starter</h3>
+                <div class="portfolio-item">
 
-<h2>399€</h2>
+                    <img src="images/taxi.jpg" alt="Taxi">
 
-<ul>
+                    <h3>Servizi Taxi</h3>
 
-<li>Sito fino a 4 pagine</li>
-<li>Design moderno</li>
-<li>Versione smartphone</li>
-<li>Contatti WhatsApp</li>
+                </div>
 
-</ul>
+            </div>
 
+        </div>
 
-</div>
+    </section>
 
 
 
+    <!-- CTA -->
 
+    <section class="cta">
 
-<div class="price">
+        <div class="container">
 
-<h3>Business</h3>
+            <h2>
 
-<h2>699€</h2>
+                Hai un progetto?
 
+            </h2>
 
-<ul>
+            <p>
 
-<li>Sito completo</li>
-<li>Menu / servizi</li>
-<li>Galleria foto</li>
-<li>Prenotazioni online</li>
-<li>Google Maps</li>
+                Raccontaci la tua idea.
+                Realizzeremo un sito web moderno,
+                veloce e professionale.
 
-</ul>
+            </p>
 
+            <a href="contatti.html" class="btn-primary">
 
-</div>
+                Richiedi un preventivo
 
+            </a>
 
+        </div>
 
+    </section>
 
-<div class="price">
 
-<h3>Premium</h3>
 
-<h2>999€+</h2>
+    <!-- FOOTER -->
 
+    <footer>
 
-<ul>
+        <div class="container">
 
-<li>Sito avanzato</li>
-<li>Funzioni personalizzate</li>
-<li>Assistenza continua</li>
+            <h3>
 
-</ul>
+                Vertex Studio
 
+            </h3>
 
-</div>
+            <p>
 
+                Siti web professionali per aziende,
+                attività locali e professionisti.
 
+            </p>
 
-</div>
+            <p>
 
+                © 2026 Vertex Studio.
+                Tutti i diritti riservati.
 
-</section>
+            </p>
 
+        </div>
 
+    </footer>
 
-
-
-
-<section id="contatti" class="contact">
-
-
-<h2>Contattaci</h2>
-
-
-<p>
-Hai bisogno di un sito per la tua attività?
-</p>
-
-
-<br>
-
-
-<a class="btn" href="https://wa.me/393331234567">
-
-Scrivici su WhatsApp
-
-</a>
-
-
-</section>
-
-
-
-
-<footer>
-
-© 2026 NovaWeb Studio
-
-</footer>
-
-
+    <script src="js/script.js"></script>
 
 </body>
+
 </html>
