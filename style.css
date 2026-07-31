@@ -1163,3 +1163,109 @@ margin:20px 0;
 background:#0b1225;
 
 }
+
+
+/* SERVIZI */
+
+
+.service-card ul{
+
+margin-top:20px;
+
+padding-left:20px;
+
+color:var(--text-gray);
+
+}
+
+
+.service-card li{
+
+margin:8px 0;
+
+}
+
+
+
+.process-section{
+
+background:#0b1225;
+
+}
+
+
+
+.steps{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:30px;
+
+margin-top:60px;
+
+}
+
+
+
+.steps div{
+
+background:
+
+rgba(255,255,255,.05);
+
+border:
+
+1px solid rgba(255,255,255,.08);
+
+padding:35px;
+
+border-radius:25px;
+
+text-align:center;
+
+}
+
+
+
+.steps span{
+
+font-size:40px;
+
+font-weight:800;
+
+color:var(--secondary);
+
+}
+
+
+
+.steps p{
+
+color:var(--text-gray);
+
+}
+
+
+
+@media(max-width:900px){
+
+.steps{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+}
+
+
+@media(max-width:600px){
+
+.steps{
+
+grid-template-columns:1fr;
+
+}
+
+}
