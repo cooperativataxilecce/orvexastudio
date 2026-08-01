@@ -1,5 +1,5 @@
 /* ==========================
-   VERTEX STUDIO
+   ORVEXA STUDIO
    JavaScript
 ========================== */
 
