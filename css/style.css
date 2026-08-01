@@ -1757,3 +1757,10 @@ grid-template-columns:1fr;
     object-fit: cover;
     border-radius: 10px;
 }
+
+.logo img {
+    display: block !important;
+    width: 40px !important;
+    height: 40px !important;
+    object-fit: cover;
+}
