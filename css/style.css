@@ -1743,3 +1743,8 @@ grid-template-columns:1fr;
 
 
 }
+
+.logo img {
+    width: 180px;
+    height: auto;
+}
